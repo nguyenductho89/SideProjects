@@ -3,10 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D01E053C2570FFE700C0A317 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D01E053B2570FFE700C0A317 /* RxSwift */; };
+		D01E053F257105DC00C0A317 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01E053E257105DC00C0A317 /* ContainerViewController.swift */; };
+		D01E054125710C7B00C0A317 /* UIMenuView-UITabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01E054025710C7B00C0A317 /* UIMenuView-UITabbar.swift */; };
+		D01E054325710CA900C0A317 /* UIMenuItem-UITabbarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01E054225710CA900C0A317 /* UIMenuItem-UITabbarItem.swift */; };
 		D0E119142570FCC300941BBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E119132570FCC300941BBF /* AppDelegate.swift */; };
 		D0E119162570FCC300941BBF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E119152570FCC300941BBF /* SceneDelegate.swift */; };
 		D0E119182570FCC300941BBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E119172570FCC300941BBF /* ViewController.swift */; };
@@ -28,6 +32,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D01E053E257105DC00C0A317 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		D01E054025710C7B00C0A317 /* UIMenuView-UITabbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIMenuView-UITabbar.swift"; sourceTree = "<group>"; };
+		D01E054225710CA900C0A317 /* UIMenuItem-UITabbarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIMenuItem-UITabbarItem.swift"; sourceTree = "<group>"; };
 		D0E119102570FCC300941BBF /* SideProjects.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SideProjects.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0E119132570FCC300941BBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0E119152570FCC300941BBF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D01E053C2570FFE700C0A317 /* RxSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +68,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D01E053A2570FFE700C0A317 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D01E053D2571059300C0A317 /* ContainerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D01E053E257105DC00C0A317 /* ContainerViewController.swift */,
+				D01E054025710C7B00C0A317 /* UIMenuView-UITabbar.swift */,
+				D01E054225710CA900C0A317 /* UIMenuItem-UITabbarItem.swift */,
+			);
+			path = ContainerViewController;
+			sourceTree = "<group>";
+		};
 		D0E119072570FCC200941BBF = {
 			isa = PBXGroup;
 			children = (
 				D0E119122570FCC300941BBF /* SideProjects */,
 				D0E1192C2570FCC400941BBF /* SideProjectsTests */,
 				D0E119112570FCC300941BBF /* Products */,
+				D01E053A2570FFE700C0A317 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +107,7 @@
 		D0E119122570FCC300941BBF /* SideProjects */ = {
 			isa = PBXGroup;
 			children = (
+				D01E053D2571059300C0A317 /* ContainerViewController */,
 				D0E119132570FCC300941BBF /* AppDelegate.swift */,
 				D0E119152570FCC300941BBF /* SceneDelegate.swift */,
 				D0E119172570FCC300941BBF /* ViewController.swift */,
@@ -118,6 +145,9 @@
 			dependencies = (
 			);
 			name = SideProjects;
+			packageProductDependencies = (
+				D01E053B2570FFE700C0A317 /* RxSwift */,
+			);
 			productName = SideProjects;
 			productReference = D0E119102570FCC300941BBF /* SideProjects.app */;
 			productType = "com.apple.product-type.application";
@@ -168,6 +198,9 @@
 				Base,
 			);
 			mainGroup = D0E119072570FCC200941BBF;
+			packageReferences = (
+				D0E119382570FF1000941BBF /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = D0E119112570FCC300941BBF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -204,7 +237,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0E1191E2570FCC300941BBF /* SideProjects.xcdatamodeld in Sources */,
+				D01E054125710C7B00C0A317 /* UIMenuView-UITabbar.swift in Sources */,
 				D0E119182570FCC300941BBF /* ViewController.swift in Sources */,
+				D01E054325710CA900C0A317 /* UIMenuItem-UITabbarItem.swift in Sources */,
+				D01E053F257105DC00C0A317 /* ContainerViewController.swift in Sources */,
 				D0E119142570FCC300941BBF /* AppDelegate.swift in Sources */,
 				D0E119162570FCC300941BBF /* SceneDelegate.swift in Sources */,
 			);
@@ -473,6 +509,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D0E119382570FF1000941BBF /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D01E053B2570FFE700C0A317 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D0E119382570FF1000941BBF /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		D0E1191C2570FCC300941BBF /* SideProjects.xcdatamodeld */ = {
